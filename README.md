@@ -1,6 +1,6 @@
 # SwiftUI Utilities
 
-This is a collection of boilerplate stylized SwiftUI views and view styles to embed in your apps.
+This is a collection of boilerplate stylized SwiftUI views and view styles, along with helpful extensions, to embed in your apps.
 
 ## Button Styles
 
