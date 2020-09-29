@@ -22,8 +22,5 @@ let package = Package(
         .target(
             name: "SwiftUIUtilities",
             dependencies: []),
-        .testTarget(
-            name: "SwiftUIUtilitiesTests",
-            dependencies: ["SwiftUIUtilities"]),
     ]
 )
