@@ -37,3 +37,7 @@ Applies a style to a `Button` view with a rounded rectangle background and icon.
                 .accentColor(.white)
         }
     }
+
+## Colors
+
+SwiftUI Utilities provides some `Color` extensions for frequently used system colors that are available from `UIColor` or `NSColor` but not in SwiftUI's `Color` structure, like system background colors.
