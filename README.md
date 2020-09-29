@@ -15,6 +15,6 @@ Applies a style to a `Button` view with a rounded rectangle background and icon.
         var body: some View {
             Button("Test") {
                 // action
-            }.buttonStyle(RoundedIconButtonStyle(backgroundColor: .blue, icon: Image(systemName: "chevron.right")).accentColor(.white)
+            }.buttonStyle(RoundedIconButtonStyle(icon: Image(systemName: "chevron.right"), backgroundColor: .blue).accentColor(.white)
         }
     }
