@@ -4,6 +4,21 @@ This is a collection of boilerplate stylized SwiftUI views and view styles to em
 
 ## Button Styles
 
+### IconButtonStyle
+Applies a style to a `Button` view with an icon on its trailing side.
+
+#### Usage
+    import SwiftUI
+    import SwiftUIUtilities
+    
+    struct YourView: View {
+        var body: some View {
+            Button("Test") {
+                // action
+            }.buttonStyle(IconButtonStyle(icon: Image(systemName: "chevron.right")).accentColor(.blue)
+        }
+    }
+
 ### RoundedIconButtonStyle
 Applies a style to a `Button` view with a rounded rectangle background and icon. This button style is similar to that found in iOS's Share sheet.
 
