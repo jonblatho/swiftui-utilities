@@ -18,13 +18,18 @@ internal struct IconButtonStyle_Previews: PreviewProvider {
     internal static var previews: some View {
         Group {
             Button("Test") { }
-                .buttonStyle(IconButtonStyle(icon: Image(systemName: "chevron.left.slash.chevron.right"))).accentColor(.blue)
+                .buttonStyle(IconButtonStyle(icon: Image(systemName: "chevron.left.slash.chevron.right")))
+                .accentColor(.blue)
             
             Button("Test") { }
-                .buttonStyle(IconButtonStyle(icon: Image(systemName: "chevron.left.slash.chevron.right"))).accentColor(.blue).environment(\.layoutDirection, .rightToLeft)
+                .buttonStyle(IconButtonStyle(icon: Image(systemName: "chevron.left.slash.chevron.right")))
+                .accentColor(.blue)
+                .environment(\.layoutDirection, .rightToLeft)
             
             Button("Test") { }
-                .buttonStyle(IconButtonStyle(icon: Image(systemName: "chevron.left.slash.chevron.right"))).accentColor(.blue).environment(\.colorScheme, .dark)
+                .buttonStyle(IconButtonStyle(icon: Image(systemName: "chevron.left.slash.chevron.right")))
+                .accentColor(.blue)
+                .environment(\.colorScheme, .dark)
         }
     }
 }

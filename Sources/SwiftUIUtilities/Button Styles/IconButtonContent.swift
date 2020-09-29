@@ -8,9 +8,12 @@ internal struct IconButtonContent: View {
     
     var body: some View {
         HStack {
-            label.foregroundColor(.accentColor)
+            label
+                .foregroundColor(.accentColor)
             Spacer()
-            icon.imageScale(.medium).foregroundColor(.accentColor)
+            icon
+                .imageScale(.medium)
+                .foregroundColor(.accentColor)
         }
     }
 }
