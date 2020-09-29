@@ -13,7 +13,9 @@ public struct RoundedIconButtonStyle: ButtonStyle {
     
     public func makeBody(configuration: Configuration) -> some View {
         IconButtonContent(label: configuration.label, icon: icon)
-        .padding(12).background(RoundedRectangle(cornerRadius: 12, style: .continuous).fill(backgroundColor))
+            .padding(12)
+            .background(RoundedRectangle(cornerRadius: 12, style: .continuous)
+                .fill(backgroundColor))
     }
 }
 
@@ -21,13 +23,18 @@ internal struct RoundedIconButtonStyle_Previews: PreviewProvider {
     internal static var previews: some View {
         Group {
             Button("Test") { }
-                .buttonStyle(RoundedIconButtonStyle(icon: Image(systemName: "chevron.left.slash.chevron.right"), backgroundColor: .gray)).accentColor(.white)
+                .buttonStyle(RoundedIconButtonStyle(icon: Image(systemName: "chevron.left.slash.chevron.right"), backgroundColor: .gray))
+                .accentColor(.white)
             
             Button("Test") { }
-                .buttonStyle(RoundedIconButtonStyle(icon: Image(systemName: "chevron.left.slash.chevron.right"), backgroundColor: .gray)).accentColor(.white).environment(\.layoutDirection, .rightToLeft)
+                .buttonStyle(RoundedIconButtonStyle(icon: Image(systemName: "chevron.left.slash.chevron.right"), backgroundColor: .gray))
+                .accentColor(.white)
+                .environment(\.layoutDirection, .rightToLeft)
             
             Button("Test") { }
-                .buttonStyle(RoundedIconButtonStyle(icon: Image(systemName: "chevron.left.slash.chevron.right"), backgroundColor: .gray)).accentColor(.white).environment(\.colorScheme, .dark)
+                .buttonStyle(RoundedIconButtonStyle(icon: Image(systemName: "chevron.left.slash.chevron.right"), backgroundColor: .gray))
+                .accentColor(.white)
+                .environment(\.colorScheme, .dark)
         }
     }
 }
