@@ -17,7 +17,7 @@ public struct RoundedRightIconButtonStyle: ButtonStyle {
     }
     
     public func makeBody(configuration: Configuration) -> some View {
-        IconButtonContent(label: configuration.label, icon: icon)
+        RightIconButtonContent(label: configuration.label, icon: icon)
             .padding(16)
             .background(RoundedRectangle(cornerRadius: 12, style: .continuous)
                 .fill(backgroundColor))
