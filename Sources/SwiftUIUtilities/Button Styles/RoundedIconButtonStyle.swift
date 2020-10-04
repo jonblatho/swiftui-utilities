@@ -7,9 +7,9 @@ import SwiftUI
  */
 public struct RoundedIconButtonStyle: ButtonStyle {
     /// The icon to display on the trailing side of the button.
-    var icon: Image
+    public var icon: Image
     /// The background color of the button.
-    var backgroundColor: Color
+    public var backgroundColor: Color
     
     public func makeBody(configuration: Configuration) -> some View {
         IconButtonContent(label: configuration.label, icon: icon)

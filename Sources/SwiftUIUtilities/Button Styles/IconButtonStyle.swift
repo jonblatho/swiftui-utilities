@@ -7,7 +7,7 @@ import SwiftUI
  */
 public struct IconButtonStyle: ButtonStyle {
     /// The icon to display on the trailing side of the button.
-    var icon: Image
+    public var icon: Image
     
     public func makeBody(configuration: Configuration) -> some View {
         IconButtonContent(label: configuration.label, icon: icon)
