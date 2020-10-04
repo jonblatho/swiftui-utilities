@@ -4,7 +4,24 @@ This is a collection of boilerplate stylized SwiftUI views and view styles, alon
 
 ## Button Styles
 
-### RightIconButtonStyle
+### RoundedLeadingIconButtonStyle
+Styles a `Button` view with a rounded rectangle background and icon next to the label, on its leading side. This icon style uses a bolder font and rounded icons compared to the trailing icon button styles.
+
+#### Usage
+    import SwiftUI
+    import SwiftUIUtilities
+    
+    struct YourView: View {
+        var body: some View {
+            Button("Test") {
+                // action
+            }
+                .buttonStyle(RoundedLeadingIconButtonStyle(icon: Image(systemName: "chevron.right"), backgroundColor: .blue)
+                .accentColor(.white)
+        }
+    }
+
+### TrailingIconButtonStyle
 Applies a style to a `Button` view with an icon on its trailing side.
 
 #### Usage
@@ -16,12 +33,12 @@ Applies a style to a `Button` view with an icon on its trailing side.
             Button("Test") {
                 // action
             }
-                .buttonStyle(RightIconButtonStyle(icon: Image(systemName: "chevron.right"))
+                .buttonStyle(TrailingIconButtonStyle(icon: Image(systemName: "chevron.right"))
                 .accentColor(.blue)
         }
     }
 
-### RoundedRightIconButtonStyle
+### RoundedTrailingIconButtonStyle
 Applies a style to a `Button` view with a rounded rectangle background and icon on its trailing side. This button style is similar to that found in iOS's Share sheet.
 
 #### Usage
@@ -33,7 +50,7 @@ Applies a style to a `Button` view with a rounded rectangle background and icon 
             Button("Test") {
                 // action
             }
-                .buttonStyle(RoundedRightIconButtonStyle(icon: Image(systemName: "chevron.right"), backgroundColor: .blue)
+                .buttonStyle(RoundedTrailingIconButtonStyle(icon: Image(systemName: "chevron.right"), backgroundColor: .blue)
                 .accentColor(.white)
         }
     }
