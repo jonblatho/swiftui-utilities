@@ -11,6 +11,11 @@ public struct RoundedIconButtonStyle: ButtonStyle {
     /// The background color of the button.
     public var backgroundColor: Color
     
+    public init(icon: Image, backgroundColor: Color = .accentColor) {
+        self.icon = icon
+        self.backgroundColor = backgroundColor
+    }
+    
     public func makeBody(configuration: Configuration) -> some View {
         IconButtonContent(label: configuration.label, icon: icon)
             .padding(12)

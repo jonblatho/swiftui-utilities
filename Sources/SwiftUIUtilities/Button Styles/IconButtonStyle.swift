@@ -9,6 +9,10 @@ public struct IconButtonStyle: ButtonStyle {
     /// The icon to display on the trailing side of the button.
     public var icon: Image
     
+    public init(icon: Image) {
+        self.icon = icon
+    }
+    
     public func makeBody(configuration: Configuration) -> some View {
         IconButtonContent(label: configuration.label, icon: icon)
     }
