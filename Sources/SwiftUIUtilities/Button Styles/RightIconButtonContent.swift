@@ -1,6 +1,6 @@
 import SwiftUI
 
-internal struct IconButtonContent: View {
+internal struct RightIconButtonContent: View {
     /// The button label text.
     var label: ButtonStyleConfiguration.Label
     /// The icon to display on the trailing side of the button.

@@ -5,7 +5,7 @@ import SwiftUI
  
  Use the icon parameter to provide an icon to use in the button, and provide a background color in the backgroundColor parameter. You can control the color of the text and icon by setting the Button's accent color.
  */
-public struct RoundedIconButtonStyle: ButtonStyle {
+public struct RoundedRightIconButtonStyle: ButtonStyle {
     /// The icon to display on the trailing side of the button.
     public var icon: Image
     /// The background color of the button.
@@ -24,20 +24,20 @@ public struct RoundedIconButtonStyle: ButtonStyle {
     }
 }
 
-internal struct RoundedIconButtonStyle_Previews: PreviewProvider {
+internal struct RoundedRightIconButtonStyle_Previews: PreviewProvider {
     internal static var previews: some View {
         Group {
             Button("Test") { }
-                .buttonStyle(RoundedIconButtonStyle(icon: Image(systemName: "chevron.left.slash.chevron.right"), backgroundColor: .gray))
+                .buttonStyle(RoundedRightIconButtonStyle(icon: Image(systemName: "chevron.left.slash.chevron.right"), backgroundColor: .gray))
                 .accentColor(.white)
             
             Button("Test") { }
-                .buttonStyle(RoundedIconButtonStyle(icon: Image(systemName: "chevron.left.slash.chevron.right"), backgroundColor: .gray))
+                .buttonStyle(RoundedRightIconButtonStyle(icon: Image(systemName: "chevron.left.slash.chevron.right"), backgroundColor: .gray))
                 .accentColor(.white)
                 .environment(\.layoutDirection, .rightToLeft)
             
             Button("Test") { }
-                .buttonStyle(RoundedIconButtonStyle(icon: Image(systemName: "chevron.left.slash.chevron.right"), backgroundColor: .gray))
+                .buttonStyle(RoundedRightIconButtonStyle(icon: Image(systemName: "chevron.left.slash.chevron.right"), backgroundColor: .gray))
                 .accentColor(.white)
                 .environment(\.colorScheme, .dark)
         }
